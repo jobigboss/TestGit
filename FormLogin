@@ -1,23 +1,32 @@
+import './FormLogin.css'
 const FormLogin =()=>{
     return (
         <div>
-            <h1>Log in</h1>
+            <div>        
+                <h1>Sign in to Test</h1>
+            </div>
             <form>
-                <div>
-                    <label>Usename</label>
-                    <input type="text" placeholder="กรุณาใส่ Usename" />
+            <div className="form-control">
+                    <label>Usename of email address</label>
+                    <input type="text" placeholder="Usename"/>
                 </div>
                 <div>
-                    <label>Password</label>
-                    <input type="text" placeholder="กรุณาใส่ Usename" />
+                    <div className="LabelForgot">
+                    <label className="label-Password">Password</label>
+                    <a href="#" className="forgot">Forgot Password?</a>                  
+                    </div>                                   
+                    <input type="text" placeholder="Password" />
                 </div>
-                <div className="btn-container">
-                    <button className="btnLogin">เข้าสู้ระบบ</button>
-                    <button className="btnRegister">ลงทะเบียน</button>
+                <div>
+                    <button type="submit" className="btn">Sign in</button>
+                </div>
+            </form>
+            <form>
+                <div className="register">
+                    <a href="#" className="Create"><label>Register Now!!</label></a>
                 </div>
             </form>
         </div>
-        
-    );
+    )
 }
-export default FormLogin 
+export default FormLogin
