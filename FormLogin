@@ -1,0 +1,23 @@
+const FormLogin =()=>{
+    return (
+        <div>
+            <h1>Log in</h1>
+            <form>
+                <div>
+                    <label>Usename</label>
+                    <input type="text" placeholder="กรุณาใส่ Usename" />
+                </div>
+                <div>
+                    <label>Password</label>
+                    <input type="text" placeholder="กรุณาใส่ Usename" />
+                </div>
+                <div className="btn-container">
+                    <button className="btnLogin">เข้าสู้ระบบ</button>
+                    <button className="btnRegister">ลงทะเบียน</button>
+                </div>
+            </form>
+        </div>
+        
+    );
+}
+export default FormLogin 
